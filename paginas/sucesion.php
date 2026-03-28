@@ -4,7 +4,7 @@ if ($_POST) {
     $n = $_POST['numero'];
     $tipo = $_POST['tipo'];
 
-    $obj = new Sucesion();
+    $obj = new sucesion();
 
     if ($tipo == "fibo") {
         $resultado = implode(", ", $obj->fibonacci($n));

@@ -1,7 +1,7 @@
 <?php
 $resultado = "";
 if ($_POST) {
-    $obj = new Acronym();
+    $obj = new Acronimo();
     $resultado = $obj->generar($_POST['frase']);
 }
 ?>
@@ -10,4 +10,4 @@ if ($_POST) {
     <input type="text" name="frase">
     <button>Generar</button>
 </form>
-<h3><?php echo $resultado; ?></h3>
+<h3> <?php echo $resultado; ?> </h3>

@@ -2,14 +2,14 @@
 $resultado = "";
 
 if ($_POST) {
-    $nums = explode(",", $_POST['numeros']);
-    $nums = array_map('floatval', $nums);
+    $numero = explode(",", $_POST['numeros']);
+    $numero = array_map('floatval', $numero);
 
-    $obj = new Reales();
+    $obj = new reales();
 
-    $resultado = "Prom: ".$obj->promedio($nums) .
-                 " Media: ".$obj->media($nums).
-                 " Moda: ".$obj->moda($nums);
+    $resultado = "Prom: ".$obj->promedio($numero) .
+    " Media: ".$obj->media($numero).
+                " Moda: ".$obj->moda($numero);
 }
 ?>
 <h2>Estadística</h2>

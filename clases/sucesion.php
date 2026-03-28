@@ -1,5 +1,5 @@
 <?php
-class sucesioon {
+class sucesion {
     public static function fibonacci($n) {
         $serie = [0,1];
         for ($i=2; $i<$n; $i++) {

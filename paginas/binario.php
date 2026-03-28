@@ -2,7 +2,7 @@
 $resultado = "";
 
 if ($_POST) {
-    $obj = new Binario();
+    $obj = new binario();
     $resultado = $obj->convertir($_POST['numero']);
 }
 ?>

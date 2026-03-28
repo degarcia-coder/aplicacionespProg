@@ -4,7 +4,7 @@ if ($_POST) {
     $A = explode(",", $_POST['A']);
     $B = explode(",", $_POST['B']);
 
-    $obj = new Conjuntos();
+    $obj = new conjuntos();
 
     $resultado = "Union: ".implode(",", $obj->union($A,$B));
 }
